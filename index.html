@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cart</title>
+  <title>Shopping Cart</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-400 flex items-center justify-center min-h-screen">
@@ -22,10 +22,9 @@
     <!-- Item List -->
     <div id="cart-items">
 
-      <!-- Item 1: Dried Chillies -->
-      <div class="flex justify-between items-start border-b pb-4 mb-4">
+      <!-- Item1: Dried Chillies -->
+      <div class="flex justify-between items-start border-b pb-4 mb-4" id="clilies-item">
         <div class="flex space-x-3">
-
           <!-- Quantity Control -->
           <div class="flex flex-col items-center justify-between">
             <button id="clilies-plus" class="text-gray-700 text-sm hover:text-black">▲</button>
@@ -34,24 +33,23 @@
           </div>
 
           <!-- Product Image and Info -->
-          <img src="./images/dried-chillies.webp" alt="Dried Chillies" class="w-10 h-10 object-cover"/>
+          <img src="/images/dried-chillies.webp" alt="Dried Chillies" class="w-10 h-10 object-cover"/>
           <div>
-            <h3 class="font-medium">Dried Chillies </h3>
+            <h3 class="font-medium">Dried Chillies (Shukna Morich)</h3>
             <p class="text-sm text-gray-500">৳59 / 100 gm</p>
           </div>
         </div>
 
-        <!-- Total -->
+        <!-- Price & Remove -->
         <div class="text-right">
           <p class="font-semibold">Taka: <span id="clilies-total">59</span></p>
-          
+          <button id="clilies-remove" class="text-red-500 text-sm">✕</button>
         </div>
       </div>
 
-      <!-- Item 2: Green Cardamom -->
-      <div class="flex justify-between items-start border-b pb-4 mb-4">
+      <!-- Item2: Green Cardamom -->
+      <div class="flex justify-between items-start border-b pb-4 mb-4" id="siasid-item">
         <div class="flex space-x-3">
-
           <!-- Quantity Control -->
           <div class="flex flex-col items-center justify-between">
             <button id="siasid-plus" class="text-gray-700 text-sm hover:text-black">▲</button>
@@ -62,29 +60,28 @@
           <!-- Product Image and Info -->
           <img src="./images/chia-seed-100-gm.webp" alt="Green Cardamom" class="w-10 h-10 object-cover"/>
           <div>
-            <h3 class="font-medium">Chia Seed</h3>
+            <h3 class="font-medium">Green Cardamom (Sobuj Elachi)</h3>
             <p class="text-sm text-gray-500">৳329 / 50 gm</p>
           </div>
         </div>
 
-        <!-- Total -->
+        <!-- Price & Remove -->
         <div class="text-right">
           <p class="font-semibold">Taka: <span id="siasid-total">329</span></p>
-          
+          <button id="siasid-remove" class="text-red-500 text-sm">✕</button>
         </div>
       </div>
-
     </div>
 
     <!-- Place Order -->
     <div class="flex justify-between items-center">
       <button class="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-2 px-4 rounded-lg text-lg flex justify-between items-center" id="place-order">
         <span>Place Order</span>
-        <span class="text-white ml-4">Total: <span id="total">388</span></span>
+        <span class="ml-4">Total: <span id="total">388</span></span>
       </button>
     </div>
   </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
