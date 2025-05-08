@@ -47,16 +47,5 @@
     updateQuantity('siasid', 329, false);
   });
 
-  // Remove buttons
-  document.getElementById('clilies-remove').addEventListener('click', function () {
-    document.getElementById('clilies-qty').innerText = 0;
-    document.getElementById('clilies-total').innerText = 0;
-    calculateTotal();
-  });
-
-  document.getElementById('siasid-remove').addEventListener('click', function () {
-    document.getElementById('siasid-qty').innerText = 0;
-    document.getElementById('siasid-total').innerText = 0;
-    calculateTotal();
-  });
+  
 
